@@ -41,4 +41,4 @@ Here are the model checkpoints that being used in the end-to-end QAG Notebook an
 ## Tips
 * We would suggest using Google Colab so that you can copy the model to your drive and mount it to the Colab instance directly, since it'll be quite slow to download such large BART model from Google Drive.
 * To run ```2_Generate_QA_pairs_with_our_QAG_system.ipynb```, you need to have a system with more than 16G RAM, and preferrably with GPU support.
-
+* If you are using Google Colab, remember to restart the runtime after installing the dependencies (Colab will have an automatic prompt as well).
