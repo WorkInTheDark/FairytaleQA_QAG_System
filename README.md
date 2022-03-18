@@ -5,24 +5,24 @@ For paper ```It is AI’s Turn to Ask Humans a Question: Question-Answer Pair Ge
 We have a separate Repository for the FairytaleQA Dataset here: https://github.com/uci-soe/FairytaleQAData
 
 ## To-do List
-* [x] Add notebook for fine-tune BART QG model
+* [x] Add notebook to fine-tune BART QG model
 * [x] Add notebook for end-2-end QA-pair Generation
 * [x] Add notebook for Ranking module 
 * [x] Add model weights
 * [x] Add instruction
 
-## Instruction
-We design an automated question-answer generation (QAG) system for an education scenario: given a story book at the kindergarten to eighth-grade level as input, our system can automatically generate QA pairs that are capable of testing a variety of dimensions of a student's comprehension skills. We are using a new expert-annotated FairytaleQA dataset, which has 278 child-friendly storybooks with 10,580 QA pairs.
+## What is this repo for
+We design an automated QA-pair generation (QAG) system for an education scenario: given a story book at the kindergarten to eighth-grade level as input, our system can automatically generate QA-pairs that are capable of testing a variety of dimensions of a student's comprehension skills. We are using a new expert-annotated FairytaleQA dataset, which has 278 child-friendly storybooks with 10,580 QA pairs.
 
 There are three sub-modules in our QAG pipeline: a heuristics-based answer generation module (AG), followed by a BART-based question generation module (QG) module fine-tuned on FairytaleQA dataset, and a DistilBERT-based ranking module fine-tuned on FairytaleQA dataset to rank and select top N QA-pairs for each input section.
 
-We've been using the same version of transformers since we started the project to avoid version conflicts and it is included in this repo. You may find the latest version here: https://github.com/huggingface/transformers
+For the fine-tune process and the end-2-end generation pipeline, We've been using the same version of transformers since we started the project to avoid version conflicts and it is included in this repo. You may find the latest version here: https://github.com/huggingface/transformers
 
 ## What's here
 We provide separate Jupyter Notebooks for the following task: 1). fine-tune a BART QG model, 2). end-to-end QAG, and 3). ranking module after generating QA-pairs. 
-We also provide a Jupyter Notebook for preprocessing the original story dataset into desired training format. 
+We also provide a Jupyter Notebook for preprocessing the original story dataset into desired training format. You may acquite the original story dataset from the repo shared above. 
 
-Here are the model checkpoints that being used in the end-to-end QAG Notebook and the Ranking Module Notebook: (We would suggest using Google Colab so that you can copy the model to your drive and mount it to the instance directly, since BART model is quite big
+Here are the model checkpoints that being used in the end-to-end QAG Notebook and the Ranking Module Notebook: (We would suggest using Google Colab so that you can copy the model to your drive and mount it to the Colab instance directly, since it'll be quite slow to download such large BART model from Google Drive.
 
 * BART QG model: https://drive.google.com/file/d/16z6yOBv6JNm5eX5wmPTGSHqKf3NGMFDI/view?usp=sharing
 
