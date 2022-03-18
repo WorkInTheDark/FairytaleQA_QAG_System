@@ -20,10 +20,9 @@ For the fine-tune process and the end-2-end generation pipeline, We've been usin
 
 ## What's here
 We provide separate Jupyter Notebooks for the following task: 1). fine-tune a BART QG model, 2). end-to-end QAG, and 3). ranking module after generating QA-pairs. 
-We also provide a Jupyter Notebook for preprocessing the original story dataset into desired training format. You may acquite the original story dataset from the repo shared above. 
+We also provide a Jupyter Notebook for preprocessing the original story dataset into desired training format. You may acquite the original story dataset from the repo shared above. To make things easy, we have pre-processed and stored the original storys for QAG under ```./QAG_Generation_E2E/data/input_for_QAG```, so you can directly run ```2_Generate_QA_pairs_with_our_QAG_system.ipynb``` without the need to pre-process original story books. (But you still need to get the model checkpoint below)
 
-Here are the model checkpoints that being used in the end-to-end QAG Notebook and the Ranking Module Notebook: (We would suggest using Google Colab so that you can copy the model to your drive and mount it to the Colab instance directly, since it'll be quite slow to download such large BART model from Google Drive.
-
+Here are the model checkpoints that being used in the end-to-end QAG Notebook and the Ranking Module Notebook: 
 * BART QG model: https://drive.google.com/file/d/16z6yOBv6JNm5eX5wmPTGSHqKf3NGMFDI/view?usp=sharing
 
   Load this model in ```2_Generate_QA_pairs_with_our_QAG_system.ipynb``` cell 9
@@ -31,3 +30,8 @@ Here are the model checkpoints that being used in the end-to-end QAG Notebook an
 * DistilBERT Ranking model: https://drive.google.com/drive/folders/1Mjg1ZQ0vltzy9WthOw7s9gRvB3g99pDI?usp=sharing
 
   Load this model in ```3_RANK_QA_on_test_val.ipynb``` cell 5
+ 
+## Tips
+* We would suggest using Google Colab so that you can copy the model to your drive and mount it to the Colab instance directly, since it'll be quite slow to download such large BART model from Google Drive.
+* To run ```2_Generate_QA_pairs_with_our_QAG_system.ipynb```, you need to have a system with more than 16G RAM, and preferrably with GPU support.
+
