@@ -16,6 +16,8 @@ We design an automated question-answer generation (QAG) system for an education 
 
 There are three sub-modules in our QAG pipeline: a heuristics-based answer generation module (AG), followed by a BART-based question generation module (QG) module fine-tuned on FairytaleQA dataset, and a DistilBERT-based ranking module fine-tuned on FairytaleQA dataset to rank and select top N QA-pairs for each input section.
 
+We've been using the same version of transformers since we started the project to avoid version conflicts and it is included in this repo. You may find the latest version here: https://github.com/huggingface/transformers
+
 ## What's here
 We provide separate Jupyter Notebooks for the following task: 1). fine-tune a BART QG model, 2). end-to-end QAG, and 3). ranking module after generating QA-pairs. 
 We also provide a Jupyter Notebook for preprocessing the original story dataset into desired training format. 
