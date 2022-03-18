@@ -5,11 +5,11 @@ For paper ```It is AI’s Turn to Ask Humans a Question: Question-Answer Pair Ge
 We have a separate Repository for the FairytaleQA Dataset here: https://github.com/uci-soe/FairytaleQAData
 
 ## To-do List
-* [ ] Add notebook for fine-tune BART QG model
+* [x] Add notebook for fine-tune BART QG model
 * [x] Add notebook for end-2-end QA-pair Generation
 * [x] Add notebook for Ranking module 
-* [ ] Add model weights
-* [ ] Add instruction
+* [x] Add model weights
+* [x] Add instruction
 
 ## Instruction
 We design an automated question-answer generation (QAG) system for an education scenario: given a story book at the kindergarten to eighth-grade level as input, our system can automatically generate QA pairs that are capable of testing a variety of dimensions of a student's comprehension skills. We are using a new expert-annotated FairytaleQA dataset, which has 278 child-friendly storybooks with 10,580 QA pairs.
