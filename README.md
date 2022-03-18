@@ -24,7 +24,7 @@ We provide separate Jupyter Notebooks for the following task:
 * 1_Train_BART_model.ipynb --> fine-tune a BART QG model
 * 2_Generate_QA_pairs_with_our_QAG_system.ipynb --> end-to-end QAG
 * 3_RANK_QA_on_test_val.ipynb --> Ranking module after generating QA-pairs with the previous Notebook 
-* 
+
 We also provide a Jupyter Notebook (```0_Pre_processing_the_original_data.ipynb```) for preprocessing the original story dataset into desired training format. You may acquite the original story dataset from the repo shared above. 
 
 To make things easy, we have pre-processed the original storys for QAG and stored them under ```./QAG_Generation_E2E/data/input_for_QAG```, so you can directly run ```2_Generate_QA_pairs_with_our_QAG_system.ipynb``` without the need to pre-process original story books. (But you still need to get the model checkpoint below)
