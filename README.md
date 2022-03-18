@@ -22,3 +22,10 @@ We also provide a Jupyter Notebook for preprocessing the original story dataset 
 
 Here are the model checkpoints that being used in the end-to-end QAG Notebook and the Ranking Module Notebook: (We would suggest using Google Colab so that you can copy the model to your drive and mount it to the instance directly, since BART model is quite big
 
+* BART QG model: https://drive.google.com/file/d/16z6yOBv6JNm5eX5wmPTGSHqKf3NGMFDI/view?usp=sharing
+
+  Load this model in ```2_Generate_QA_pairs_with_our_QAG_system.ipynb``` cell 9
+
+* DistilBERT Ranking model: https://drive.google.com/drive/folders/1Mjg1ZQ0vltzy9WthOw7s9gRvB3g99pDI?usp=sharing
+
+  Load this model in ```3_RANK_QA_on_test_val.ipynb``` cell 5
