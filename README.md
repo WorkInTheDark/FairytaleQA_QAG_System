@@ -10,6 +10,7 @@ We have a separate Repository for the FairytaleQA Dataset here: https://github.c
 * [x] Add notebook for Ranking module 
 * [x] Add model weights
 * [x] Add instruction
+* [ ] Add System Diagram
 
 ## What is this repo for
 We design an automated QA-pair generation (QAG) system for an education scenario: given a story book at the kindergarten to eighth-grade level as input, our system can automatically generate QA-pairs that are capable of testing a variety of dimensions of a student's comprehension skills. We are using a new expert-annotated FairytaleQA dataset, which has 278 child-friendly storybooks with 10,580 QA pairs.
