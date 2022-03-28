@@ -19,6 +19,10 @@ There are three sub-modules in our QAG pipeline: a heuristics-based answer gener
 
 For the fine-tune process and the end-2-end generation pipeline, We've been using the same version of transformers since we started the project to avoid version conflicts and it is included in this repo. You may find the latest version here: https://github.com/huggingface/transformers
 
+## QA-pair Generation System Diagram
+
+![](/QAG2.jpg "QA-pair Generation System Diagram")
+
 ## What's here
 We provide separate Jupyter Notebooks for the following task: 
 
