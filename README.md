@@ -1,8 +1,8 @@
 # FairytaleQA_QAG_System
 
-For paper ```It is AI’s Turn to Ask Humans a Question: Question-Answer Pair Generation for Children’s Story Books``` [accepted to ACL 2022]
+For paper [```It is AI’s Turn to Ask Humans a Question: Question-Answer Pair Generation for Children’s Story Books```](https://arxiv.org/abs/2109.03423/)  [accepted to ACL 2022]
 
-We have a separate Repository for the FairytaleQA Dataset here: https://github.com/uci-soe/FairytaleQAData
+We have a separate repository for the FairytaleQA Dataset here: https://github.com/uci-soe/FairytaleQAData
 
 ## To-do List
 * [x] Add notebook to fine-tune BART QG model
@@ -21,7 +21,6 @@ For the fine-tune process and the end-2-end generation pipeline, We've been usin
 
 ## What's here
 We provide separate Jupyter Notebooks for the following task: 
-
 
 * ```0_Pre_processing_the_original_data.ipynb``` --> Pre-processing the original story dataset into desired fine-tuning format. You may acquire the original story dataset from https://github.com/uci-soe/FairytaleQAData. Remember to put question and story files into one folder while using this notebook.
 * ```1_Train_BART_model.ipynb``` --> fine-tune a BART QG model
