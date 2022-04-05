@@ -19,7 +19,7 @@ For the fine-tune process and the end-2-end generation pipeline, We've been usin
 There are three sub-modules in our QAG pipeline: 
 1. An answer generation(AG) module that leverages Spacy English model to extract named entities and noun chunks and Propbank’s Semantic Role Labeler to extract action events’ descriptions as candidate answers
 2. A BART-based question generation(QG) module fine-tuned on FairytaleQA dataset 
-3. A ranking module to rank and select top-<em>N<em> QA-pairs. We fine-tune a DistilBERT model on a classification task between QA-pairs generated with our QAG system and ground-truth from FairytaleQA Dataset
+3. A ranking module to rank and select top-<em>N</em> QA-pairs. We fine-tune a DistilBERT model on a classification task between QA-pairs generated with our QAG system and ground-truth from FairytaleQA Dataset
 
 
 ## What's here
