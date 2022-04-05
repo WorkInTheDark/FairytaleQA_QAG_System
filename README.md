@@ -31,7 +31,9 @@ We provide separate Jupyter Notebooks for the following task:
 * ```3_RANK_QA_on_test_val.ipynb``` --> Ranking module after generating QA-pairs with the previous Notebook 
 
 
-To make things easy, we have pre-processed the original storys from FairytaleQA Dataset for QAG and stored them under ```./QAG_Generation_E2E/data/input_for_QAG```. In each pre-processed story file, each line is a section of the story. (A section is determined by human coders which contains multiple paragraphs). So you can directly run ```2_Generate_QA_pairs_with_our_QAG_system.ipynb``` without the need to pre-process original story books by yourself if you just wish to view the generation results on FairytaleQA Dataset. (But you still need to get the model checkpoint below)
+To make things easy, we have pre-processed the original storys from FairytaleQA Dataset for QAG and stored them under ```./QAG_Generation_E2E/data/input_for_QAG```. In each pre-processed story file, each line is a section of the story. (A section is determined by human coders which contains multiple paragraphs) 
+
+Thus, you may directly run ```2_Generate_QA_pairs_with_our_QAG_system.ipynb``` without the need to pre-process original story books by yourself if you just wish to view the generation results on FairytaleQA Dataset. (But you still need to get the model checkpoint below). Also, you may directly use the pre-processed story data to test your own QAG systems. 
 
 Here are the model checkpoints that being used in the end-to-end QAG Notebook and the Ranking Module Notebook: 
 * BART QG model: https://drive.google.com/file/d/16z6yOBv6JNm5eX5wmPTGSHqKf3NGMFDI/view?usp=sharing
