@@ -5,7 +5,7 @@ For paper [```It is AI’s Turn to Ask Humans a Question: Question-Answer Pair G
 We have a separate repository for the FairytaleQA Dataset here: https://github.com/uci-soe/FairytaleQAData
 
 ## What this repo is for
-We developed an automated QA-pair generation (QAG) system for an education scenario: given a story book at the kindergarten to eighth-grade level as input, our system can automatically generate QA-pairs that are capable of testing a variety of dimensions of a student's comprehension skills. We are using a new expert-annotated FairytaleQA dataset, which has 278 child-friendly storybooks with 10,580 QA pairs.
+We developed an automated QA-pair generation (QAG) system for an education scenario: given a story book as input, our system can automatically generate QA-pairs that are capable of testing a variety of dimensions of a student's comprehension skills. We are using a new expert-annotated FairytaleQA dataset, which focuses on narrative comprehension for elementary to middle school students and contains 10,580 QA-pairs labeled by education experts from 278 classic fairytales.
 
 For the fine-tune process and the end-2-end generation pipeline, We've been using the same version of transformers since we started the project to avoid version conflicts and it is included in this repo. You may find the latest version here: https://github.com/huggingface/transformers
 
