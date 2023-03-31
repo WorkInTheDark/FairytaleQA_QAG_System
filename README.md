@@ -2,11 +2,16 @@
 
 For paper [```It is AI’s Turn to Ask Humans a Question: Question-Answer Pair Generation for Children’s Story Books```](https://arxiv.org/abs/2109.03423/)  [accepted to ACL 2022]
 
-We have a separate repository for the FairytaleQA Dataset here: 
+We have a separate repository for the FairytaleQA Dataset [```Fantastic Questions and Where to Find Them: FairytaleQA -- An Authentic Dataset for Narrative Comprehension```](https://arxiv.org/abs/2203.13947/) [accepted to ACL 2022] here: 
 
-https://github.com/uci-soe/FairytaleQAData (this repo is not available now)
+https://github.com/uci-soe/FairytaleQAData (this repo might not be available, use the following one instead)
 
 https://github.com/WorkInTheDark/FairytaleQA_Dataset
+
+We also have a separate repository for the StoryBuddy Storytelling System [```StoryBuddy: A Human-AI Collaborative Chatbot for Parent-Child Interactive Storytelling with Flexible Parental Involvement```](https://arxiv.org/abs/2202.06205/) [accepted to CHI 2022] built upon this QAG framework here:
+
+https://github.com/roryzhengzhang/storytelling-QA-system
+
 
 ## What this repo is for
 We developed an automated QA-pair generation (QAG) system for an education scenario: given a story book as input, our system can automatically generate QA-pairs that are capable of testing a variety of dimensions of a student's comprehension skills. We are using a new expert-annotated FairytaleQA dataset, which focuses on narrative comprehension for elementary to middle school students and contains 10,580 QA-pairs labeled by education experts from 278 classic fairytales.
