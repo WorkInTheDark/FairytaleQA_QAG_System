@@ -1,14 +1,14 @@
 # FairytaleQA_QAG_System
 
-For paper [```It is AI’s Turn to Ask Humans a Question: Question-Answer Pair Generation for Children’s Story Books```](https://arxiv.org/abs/2109.03423/)  [accepted to ACL 2022]
+For paper [```It is AI’s Turn to Ask Humans a Question: Question-Answer Pair Generation for Children’s Story Books```](https://arxiv.org/abs/2109.03423/)  **[accepted to ACL 2022]**
 
-We have a separate repository for the FairytaleQA Dataset [```Fantastic Questions and Where to Find Them: FairytaleQA -- An Authentic Dataset for Narrative Comprehension```](https://arxiv.org/abs/2203.13947/) [accepted to ACL 2022] here: 
+We have a separate repository for the FairytaleQA Dataset [```Fantastic Questions and Where to Find Them: FairytaleQA -- An Authentic Dataset for Narrative Comprehension```](https://arxiv.org/abs/2203.13947/) **[accepted to ACL 2022]**:
 
 https://github.com/uci-soe/FairytaleQAData (this repo might not be available, use the following one instead)
 
 https://github.com/WorkInTheDark/FairytaleQA_Dataset
 
-We also have a separate repository for the StoryBuddy Storytelling System [```StoryBuddy: A Human-AI Collaborative Chatbot for Parent-Child Interactive Storytelling with Flexible Parental Involvement```](https://arxiv.org/abs/2202.06205/) [accepted to CHI 2022] built upon this QAG framework here:
+We also have a separate repository for the StoryBuddy Storytelling System [```StoryBuddy: A Human-AI Collaborative Chatbot for Parent-Child Interactive Storytelling with Flexible Parental Involvement```](https://arxiv.org/abs/2202.06205/) **[accepted to CHI 2022]** built upon this QAG framework here:
 
 https://github.com/roryzhengzhang/storytelling-QA-system
 
@@ -34,7 +34,10 @@ There are three sub-modules in our QAG pipeline:
 ## What's here
 We provide separate Jupyter Notebooks for the following task: 
 
-* ```0_Pre_processing_the_original_data.ipynb``` --> Pre-processing the original story dataset into desired fine-tuning format. You may acquire the original story dataset from https://github.com/uci-soe/FairytaleQAData. Remember to put question and story files into one folder before using this notebook, so that the script can directly find the story file and question file for the same story.
+* (You can load the dataset from Huggingface Hub, SEE BELOW) 
+
+  ```0_Pre_processing_the_original_data.ipynb``` --> Pre-processing the original story dataset into desired fine-tuning format. You may acquire the original story dataset from https://github.com/uci-soe/FairytaleQAData. Remember to put question and story files into one folder before using this notebook, so that the script can directly find the story file and question file for the same story.
+
 * ```1_Train_BART_model.ipynb``` --> fine-tune a BART QG model
 * ```2_Generate_QA_pairs_with_our_QAG_system.ipynb``` --> end-to-end QAG
 * ```3_RANK_QA_on_test_val.ipynb``` --> Ranking module after generating QA-pairs with the previous Notebook 
