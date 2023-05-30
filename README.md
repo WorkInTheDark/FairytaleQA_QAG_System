@@ -39,8 +39,40 @@ We provide separate Jupyter Notebooks for the following task:
 * ```2_Generate_QA_pairs_with_our_QAG_system.ipynb``` --> end-to-end QAG
 * ```3_RANK_QA_on_test_val.ipynb``` --> Ranking module after generating QA-pairs with the previous Notebook 
 
+**[2023 UPDATE] We have uploaded the dataset to Huggingface Hub, so you can load the dataset much more easily for NLP tasks**
+The dataset is uploaded to Huggingface Hub: https://huggingface.co/datasets/WorkInTheDark/FairytaleQA
+```
+from datasets import load_dataset
+dataset = load_dataset("WorkInTheDark/FairytaleQA")
 
-To make things easy, we have pre-processed the original storys from FairytaleQA Dataset for QAG and stored them under ```./QAG_Generation_E2E/data/input_for_QAG```. In each pre-processed story file, each line is a section of the story. (A section is determined by human coders which contains multiple paragraphs) 
+'''
+DatasetDict({
+    train: Dataset({
+        features: ['story_name', 'story_section', 'question', 'answer1', 'answer2', 'local-or-sum', 'attribute', 'ex-or-im', 'ex-or-im2'],
+        num_rows: 8548
+    })
+    validation: Dataset({
+        features: ['story_name', 'story_section', 'question', 'answer1', 'answer2', 'local-or-sum', 'attribute', 'ex-or-im', 'ex-or-im2'],
+        num_rows: 1025
+    })
+    test: Dataset({
+        features: ['story_name', 'story_section', 'question', 'answer1', 'answer2', 'local-or-sum', 'attribute', 'ex-or-im', 'ex-or-im2'],
+        num_rows: 1007
+    })
+})
+'''
+```
+
+To load ```train/test/valid``` split: 
+```
+from datasets import load_dataset
+dataset = load_dataset("WorkInTheDark/FairytaleQA", split='train')
+```
+
+
+
+**[ORIGINAL CONTENT]** To make things easy, we have pre-processed the original storys from FairytaleQA Dataset for QAG and stored them under ```./QAG_Generation_E2E/data/input_for_QAG```. In each pre-processed story file, each line is a section of the story. (A section is determined by human coders which contains multiple paragraphs) 
+
 
 Thus, you may directly run ```2_Generate_QA_pairs_with_our_QAG_system.ipynb``` without the need to pre-process original story books by yourself if you just wish to view the generation results on FairytaleQA Dataset. (But you still need to get the model checkpoint below). Also, you may directly use the pre-processed story data to test your own QAG systems. 
 
